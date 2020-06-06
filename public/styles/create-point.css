@@ -1,0 +1,172 @@
+#create-point{
+    width: 900px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+#create-point header{
+    margin-top:48px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.a-create-point-header{
+    color:var(--title-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.span-create-point-header{
+    margin-right: 10px;
+    background-image: url(/icones/arrow-left.svg);
+    display:flex;
+    width: 20px;
+    height: 24px;
+}
+.cadastroPontoColeta{
+    background-color: var(--white-squares);
+    margin-top:4vh;
+    padding: 42px;
+    border-radius:12px;
+    /* max-width: 730px; */
+
+}
+.cadastroPontoColeta h1{
+    font-size: 38px;
+    text-align: center;
+}
+.cadastroPontoColeta fieldset{
+    margin-top: 2vh;
+    border:0;
+}
+.cadastroPontoColeta legend{
+    margin-bottom: 2vh;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cadastroPontoColeta legend h2{
+    font-size:24px;
+}
+.cadastroPontoColeta legend span{
+    font-size: 15px;
+    color:var(--title-color);    
+}
+.cadastroPontoColeta .field{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4vh;
+}
+.cadastroPontoColeta .field-group{
+    display: flex;
+    width: 100%;
+}
+.cadastroPontoColeta .field-group > * {
+    flex: 0 0 auto;
+  }
+
+.cadastroPontoColeta input, .cadastroPontoColeta select{
+    background-color: #f0f0f5;
+    border:0;
+    padding: 16px 24px;
+    font-size:16px;
+    outline-color: var(--title-color);
+    border-radius: 8px;
+}
+
+ /* form select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}  */
+.cadastroPontoColeta label{
+    font-size: 16px;
+    margin-bottom:8px;
+}
+
+.cadastroPontoColeta .field-group .field + .field{
+    margin-left:2%;
+}
+
+.cadastroPontoColeta button{
+    width: 260px;
+    height: 56px;
+    background-color: var(--success-color);
+    color:white;
+    font-weight: bold;
+    font-size:16px;
+    border:0;
+    margin-top:5vh;
+    border-radius:20px;
+    transition:400ms;
+    margin-left: 65%;
+    display:flex;
+    align-items: center;
+    /* background:url(/icones/check.svg)no-repeat; */
+}
+.cadastroPontoColeta button:hover{
+    background-color: #2fb86e;
+}
+
+.cadastroPontoColeta .field-group .espacamento30{
+    width: 29% !important;
+}
+.cadastroPontoColeta .field-group .espacamento70{
+    width: 69% !important;
+}
+.cadastroPontoColeta .field-group .espacamento50{
+    width: 49% !important;
+}
+.checkButton{
+    width: 56px;
+    height: 56px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkButton::after{
+    content:"";
+    background-image: url(/icones/checkWhite.svg);
+    width: 20px;
+    height: 20px;
+}
+
+.itens-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2vh;
+}
+.itens-grid li{
+    background-color: #f5f5f5;
+    list-style: none;
+    border: 2px solid #f5f5f5;
+    border-radius: 20px;
+    height:160px;
+    padding: 32px 24px 16px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+    cursor: pointer;
+}
+.itens-grid li span{
+    margin-top: 2vh;
+    flex:1;
+    display:flex;
+    align-items: center;
+    color: var(--title-color);
+}
+.itens-grid li.selected{
+    background: #e1faec;
+    border: 2px solid #34cb99;
+}
+.itens-grid li img,
+.itens-grid li span{
+    pointer-events: none;
+}

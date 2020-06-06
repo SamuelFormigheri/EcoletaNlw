@@ -1,0 +1,74 @@
+@media(max-width: 900px){
+    #page-home{
+        background-position-x: 72vw;
+    }
+    .content{
+        align-items: center;
+        text-align: center;
+    }
+    .a-home-header{
+        position: absolute;
+        bottom:4vh;
+    }
+    #page-home main{
+        align-items: center;
+    }
+    #search-results .cards{
+        grid-template-columns: 1fr;
+    }
+    #search-results .cards img{
+        height: 300px;
+    }
+    #search-results{
+        width: 80vw;
+    }
+    #create-point{
+        width: 80vw;
+    }
+    .cadastroPontoColeta .field-group{
+        flex-direction: column;
+    }
+    .cadastroPontoColeta .field-group .field + .field{
+        margin-left:0;
+    }
+    .cadastroPontoColeta button{
+        margin-left: 50%;
+    }
+    .cadastroPontoColeta .field-group .espacamento30{
+        width: 100% !important;
+    }
+    .cadastroPontoColeta .field-group .espacamento70{
+        width: 100% !important;
+    }
+    .cadastroPontoColeta .field-group .espacamento50{
+        width: 100% !important;
+    }
+}
+
+@media(max-height: 760px){
+    #page-home{
+        background-position-y: 200px;
+    }
+    #page-home main{
+        height: 70%;
+    }
+}
+
+@media(max-width: 494px){
+    #page-home main{
+        height: 70%;
+    }
+    .a-home-header{
+        position: absolute;
+        bottom:1vh;
+    }
+} 
+
+@media(max-width: 740px){
+    .cadastroPontoColeta{        
+        padding: 0;    
+    }  
+    .cadastroPontoColeta button{
+        margin-left: 38%;
+    }
+}

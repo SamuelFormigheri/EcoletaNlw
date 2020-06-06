@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% set bodyId = "search-results" %}
+
+{% block title %} 
+<title>Resultado da Pesquisa</title>
+{% endblock title %}
+
+{% block styles %}
+<link rel="stylesheet" href="/styles/search-results.css"> 
+{% endblock styles %} 
+               
+{% block content %}  
+{% include "partials/page-header.html" %}
+<main>
+{% if total > 0 %}
+
+    <h4>
+        <strong>{{ total }} pontos</strong> encontrados
+    </h4>
+    <div class="cards">
+        {% for place in places %}   
+            <div class="card">
+                <img src="{{ place.image }}" alt="{{ place.name }}">
+                <h1>{{ place.name }}</h1>
+                <h3>{{ place.itens }}</h3>
+                <p>
+                    {{ place.city }}, {{ place.state }} <br/>
+                    {{ place.address }} <br/>
+                    Nº {{ place.address2 }}
+                </p>
+             </div>
+        {% endfor %}     
+    </div>
+{% else %}
+    <h1>Não foram encontrados pontos de coleta</h1>
+    <a href="/create-point">Cadastrar ponto de coleta</a> 
+{% endif %}
+</main>
+{% endblock content %}  

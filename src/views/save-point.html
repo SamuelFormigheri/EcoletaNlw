@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% set bodyId = "save-point" %}
+
+{% block title %} 
+ <title>Salvo com Sucesso!</title>
+{% endblock title %}
+
+{% block styles %}
+<link rel="stylesheet" href="/styles/save-point.css">
+{% endblock styles %}      
+        
+   
+{% block content %}  
+    <div id = "modal">        
+        <div class="content">              
+                <div class="header">
+                        <img src="/icones/check.svg" alt="Cadastrado Com Sucesso">
+                        <h1>Ponto de coleta cadastrado com sucesso!</h1>
+                        
+                        <a class="btnRetornar" href="/create-point"><strong class="strongclass">Retornar</strong></a> 
+                       
+                </div>               
+        </div> 
+    </div>  
+{% endblock content %}
