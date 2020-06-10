@@ -1,3 +1,5 @@
+![0](https://user-images.githubusercontent.com/62508848/84280486-bbafb300-ab0d-11ea-91b0-21d0a5befe7e.jpg)
+
 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
