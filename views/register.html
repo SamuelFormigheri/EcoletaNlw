@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registre-se</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="/styles/index.css">    
+        <link rel="stylesheet" href="/styles/modal.css">   
+        <link rel="stylesheet" href="/styles/responsive.css">
+    </head>
+
+    <body> 
+        <div id="modal">
+            <div class="content">
+                <div class="header">
+                    <h1>Ecoleta   |   Registre-se</h1>
+                    <a href="/login">Fechar</a>                    
+                </div>
+                <form action="/register" method="POST">
+                    <label>E-mail</label>
+                    <div class="search field">                       
+                        <input type="email" name="email" placeholder="Insira o seu e-mail" required>
+                    </div>
+                    <label>Usuário</label>
+                    <div class="search field">                       
+                        <input type="text" name="user" placeholder="Insira o seu nome de usuário" required>
+                    </div>
+                    <label>Senha</label>
+                    <div class="search field">                        
+                        <input type="password" name="password" placeholder="Insira a sua senha" required>
+                    </div>
+                    <button type="submit">
+                        <img src="/icones/log-in.svg" alt="Buscar">
+                        <span>Cadastrar</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

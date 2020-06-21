@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="/styles/index.css">    
+        <link rel="stylesheet" href="/styles/modal.css">   
+        <link rel="stylesheet" href="/styles/responsive.css">
+    </head>
+
+    <body> 
+        <div id="modal">
+            <div class="content">
+                <div class="header">
+                    <h1>Ecoleta   |   Log In</h1>
+                    <a href="/">Fechar</a>                    
+                </div>
+                <form action="/login" method="POST">
+                    <label>Usuário</label>
+                    <div class="search field">                       
+                        <input type="text" name="username" placeholder="Insira o seu nome de usuário" required>
+                    </div>
+                    <label>Senha</label>
+                    <div class="search field">                        
+                        <input type="password" name="password" placeholder="Insira a sua senha" required>
+                    </div>
+                    <label style="color:red;">{{messages.error}}</label>
+                    <button type="submit">
+                        <img src="/icones/log-in.svg" alt="Buscar">
+                        <span>Entrar</span>
+                    </button>
+                </form>
+                <h4 style="text-align:center; color:white;">Caso não tiver uma conta, então <a href="/register">Registre-se.</a> <h4> 
+            </div>
+        </div>
+    </body>
+</html>
