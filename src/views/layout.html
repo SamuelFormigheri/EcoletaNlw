@@ -17,10 +17,20 @@
 
     </head>
     <body>
-        <label class="switch" onclick="darkModeOnOff()">
-           <input id ="dark-mode" type="checkbox">
-           <span class="slider round"></span>
-        </label>
+        <div class="sharedHeader">
+            <label class="switch" onclick="darkModeOnOff()" data-tooltip-content="Modo Escuro Ligar/Desligar" target="_blank">
+                <input id ="dark-mode" type="checkbox" {{ darkModeVariable }}>
+                <span class="slider round"></span>
+            </label>
+            {% if userLogged %}
+            
+            <form action="/logout?_method=DELETE" method="POST">
+            <label class="userLogged">Olá, {{ userLogged }}</label>
+            <button type="submit">Sair</button>
+            {# <img src="/icones/logout.svg" > #}
+            </form>
+            {% endif %}
+        </div>       
         <div id="{{ bodyId }}">
             {% block content %}
             {% endblock content %}
