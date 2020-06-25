@@ -1,0 +1,160 @@
+/*#region WIDTH */
+
+/*#region max-width: 900px */
+
+@media(max-width: 900px){
+    #page-home{
+        background-position-x: 72vw;
+    }
+    .content{
+        align-items: center;
+        text-align: center;
+    }
+    .a-home-header{
+        position: absolute;
+        bottom:4vh;
+    }
+    #page-home main{
+        align-items: center;
+    }
+    #search-results .cards{
+        grid-template-columns: 1fr;
+    }
+    #search-results .cards img{
+        height: 300px;
+    }
+    #search-results{
+        width: 80vw;
+    }
+    #create-point{
+        width: 80vw;
+    }
+    .cadastroPontoColeta .field-group{
+        flex-direction: column;
+    }
+    .cadastroPontoColeta .field-group .field + .field{
+        margin-left:0;
+    }
+    .cadastroPontoColeta button{
+        margin-left: 50%;
+    }
+    .cadastroPontoColeta .field-group .espacamento30{
+        width: 100% !important;
+    }
+    .cadastroPontoColeta .field-group .espacamento70{
+        width: 100% !important;
+    }
+    .cadastroPontoColeta .field-group .espacamento50{
+        width: 100% !important;
+    }
+}
+
+/*#endregion*/
+
+/*#region max-width: 740px */
+@media(max-width: 740px){
+    .cadastroPontoColeta{        
+        padding: 0;    
+    }  
+    .cadastroPontoColeta button{
+        margin-left: 0;
+    }
+    .itens-grid{
+        grid-template-columns: 1fr;
+    }
+}
+/*#endregion*/
+
+/*#region max-width: 480px */
+@media(max-width: 480px){
+    #page-home{
+        background-position-y: 200px;
+    }
+    #page-home main{
+        height: 70%;
+        margin-top: 5vh;
+    }
+    .content{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .content header{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .content main{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .content main .btnPesquisarPontosColeta{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .a-home-header{
+        bottom:0;
+    }
+    .titulosMain{
+        margin-top:-30px;
+    }
+    .userLogged{
+        padding: 0;
+    }
+    #create-point header{
+        flex-direction:column;
+    }
+    .cadastroPontoColeta input{
+        width: 75%;
+    }
+}
+/*#endregion*/
+
+/*#endregion*/
+
+/*#region HEIGHT*/
+
+/*#region max-height: 825px */
+@media(max-height: 825px){
+    #page-home{
+        background-position-y: 200px;
+    }
+    #page-home main{
+        height: 70%;
+        margin-top: 5vh;
+    }
+    .content{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .content header{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .content main{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .content main .btnPesquisarPontosColeta{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .a-home-header{
+        bottom:0;
+    }
+    .titulosMain{
+        margin-top:-30px;
+    }
+}
+/*#endregion*/
+
+/*#region max-height: 568px */
+@media(max-height: 568px){
+    .a-home-header{
+        bottom:-40px;
+    } 
+    body{
+        overflow-y:auto;
+    }
+}
+/*#endregion*/
+
+/*#endregion*/

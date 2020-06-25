@@ -1,0 +1,71 @@
+/* Quadrado branco no fundo */
+body::after{
+    content:"";
+    position:fixed;
+    background:var(--white-squares);
+    top:28vh;
+    right:0;
+    left:0;
+    bottom:0;
+    z-index: -1;
+}
+
+#search-results{
+    width: 900px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+#search-results header{
+    margin-top:48px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.a-create-point-header{
+    color:var(--title-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.span-create-point-header{
+    margin-right: 10px;
+    background-image: url(/icones/arrow-left.svg);
+    display:flex;
+    width: 20px;
+    height: 24px;
+}
+
+/*#region main */
+main{
+    margin: 5vh;
+}
+main .card img{
+    width: 100%;
+    height:200px;
+    border-radius: 8px 8px 0 0;
+}
+main h4{
+    font-weight: normal;
+    font-family: Roboto, sans-serif;
+
+    margin-bottom:3vh;
+}
+main .cards{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2vw;
+}
+main .card h3{
+    font-family: Roboto;
+    font-style:normal;
+    font-weight: 500;
+    color:#34CB79;
+}
+
+main .card p {
+    font-size: 16px;
+    line-height: 26px;
+    color:#6C6C80;
+}
+/*#endregion*/

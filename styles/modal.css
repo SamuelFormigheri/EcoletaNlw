@@ -1,0 +1,200 @@
+/*#region #modal */
+body{
+    overflow: hidden;
+}
+#modal{
+    background-color: #0e0a14ef;
+    height:100vh;
+    width: 100vw;
+    position:fixed;
+    top:0;
+    right:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:400ms;   
+}
+
+#modal.hide{
+    display: none;
+}
+
+#modal .content{
+   color:white;
+   width: 400px; /* Alterar aqui */
+   margin-top:42vh;
+   animation-name: fade;
+   animation-duration: 500ms;
+}
+
+#modal .header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vh ;
+}
+
+#modal .header a{
+    background-image: url("/icones/x.svg");
+    width: 20px;
+    height: 20px;
+    display: flex;
+    font-size: 0.01px;;
+}
+
+#modal .header h1{
+    color:white;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+#modal form .field{
+    display: flex;
+}
+#modal form input{
+    background-color: #f0f0f5;
+    border:0;
+    padding: 16px 24px;
+    font-size:16px;
+    outline-color: var(--title-color);
+    border-radius: 8px;
+    margin-bottom:2vh;
+    width: 100%;
+}
+
+#modal form button{
+    width: 100%;
+    height: 40px;
+    background-color: var(--success-color);
+    color:white;
+    font-weight: bold;
+    font-size:16px;
+    border:0;
+    border-radius:10px;
+    transition:400ms;
+    flex:1;
+    align-items: center;
+}
+
+#modal form button:hover{
+    background-color: #269258;
+}
+
+#modal form label{
+    font-size:14px;
+    line-height: 16px;
+    
+    display:block;
+    margin-bottom:1vh;
+}
+/*--------------- Squares do fundo --------------*/
+.squares li{
+    /* Diversas propriedades CSS definidas via JS */
+    background-color: rgba(255,255,255,0.1);
+    display: block;
+    position: absolute;
+    animation: movement 2s infinite;
+    animation-direction: alternate;
+  }
+/*#endregion*/
+
+/*#region Animations */
+
+/*#region Fade no register e login */
+#modal .content.login, #modal .content.register{
+    /*Animation fade foi definida no css do modal .content, 
+      a diferença aqui é que a duration é mais lenta, para 
+      se tornar mais perceptível ------------------------*/
+    animation-duration: 1s;
+}
+/*#endregion*/
+
+/*#region Login */
+#modal .content.login .userField, #modal .content.login .inputUserName {
+    animation-name: moveX;
+    animation-duration: 1s;
+    animation-delay: 250ms;
+    animation-fill-mode: backwards;
+ }
+#modal .content.login .passwordField, #modal .content.login .inputPassword {
+    animation-name: moveX;
+    animation-duration: 1s;
+    animation-delay: 500ms;
+    animation-fill-mode: backwards;
+}
+#modal .content.login button{
+    animation-name: moveX;
+    animation-duration: 1s;
+    animation-delay: 750ms;
+    animation-fill-mode: backwards;
+}
+#modal .content.login h4{
+    animation-name: moveX;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+}
+/*#endregion*/
+
+/*#region Register */
+#modal .content.register .emailField, #modal .content.register .inputEmail {
+    animation-name: moveX;
+    animation-duration: 1s;
+    animation-delay: 250ms;
+    animation-fill-mode: backwards;
+ }
+#modal .content.register .userField, #modal .content.register .inputUserName {
+    animation-name: moveX;
+    animation-duration: 1s;
+    animation-delay: 500ms;
+    animation-fill-mode: backwards;
+ }
+#modal .content.register .passwordField, #modal .content.register .inputPassword {
+    animation-name: moveX;
+    animation-duration: 1s;
+    animation-delay: 750ms;
+    animation-fill-mode: backwards;
+}
+#modal .content.register button{
+    animation-name: moveX;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+}
+/*#endregion*/
+
+/*#region Configuração das Animações */
+
+@keyframes fade{
+    from{
+       opacity: 0;
+       transform: scale(0.8);
+    }to{
+       opacity: 1;
+       transform: scale(1);
+    }
+}
+@keyframes moveX{
+    from{
+       opacity:0;
+       transform: translateX(-35%);
+    }to{
+       transform: translateX(0%);
+       opacity:1;
+    }
+}
+@keyframes movement{
+    from{
+        opacity:0;
+        transform: translateY(0);
+      }20%{
+        opacity:1;
+      }
+      to{
+        opacity:0;
+        transform: translateY(-1000px) rotate(960deg);
+      }
+}
+/*#endregion*/
+
+/*#endregion*/

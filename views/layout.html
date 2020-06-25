@@ -29,6 +29,8 @@
             <button type="submit">Sair</button>
             {# <img src="/icones/logout.svg" > #}
             </form>
+            {% else %}
+            <a href="/login">Login</a>
             {% endif %}
         </div>       
         <div id="{{ bodyId }}">
